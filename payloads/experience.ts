@@ -18,7 +18,7 @@ export const experiences: IExperience[] = [
         ],
         skills: [
             'TypeScript',
-            'NextJs',
+            'NestJs',
             'BoltJs',
             'MySQL',
             'EC2',
@@ -29,12 +29,12 @@ export const experiences: IExperience[] = [
         company: '글루시스',
         position: '개발팀 인턴',
         startAt: '2021.01',
-        endAt: '2020.03',
+        endAt: '2021.03',
         description: [
-            '사내 연동 슬랙앱 설계 및 개발'
+            'NAS 서버 학습 및 테스트 코드 작성'
         ],
         skills: [
-
+            'Perl'
         ]
     },
     {
@@ -43,7 +43,7 @@ export const experiences: IExperience[] = [
         startAt: '2018.11',
         endAt: '2019.12',
         description: [
-            '3D 프린터 시뮬레이터 개발'
+            '3D 프린팅 시뮬레이터 개발'
         ],
         skills:[
             'Unity', 'C#', 'MySQL',

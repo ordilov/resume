@@ -17,33 +17,22 @@ export default function Education({educations}: { educations: IEducation[] }) {
             ))}
 
             <style jsx>{`
-              .grid {
-                display: grid;
-                background-color: #f0f0f0;
-                padding: 10px;
-                grid-template-columns: 250px 1fr;
-                row-gap: 0;
-              }
-
               h2 {
                 grid-row: 1 / ${educations.length + 1};
                 font-size: 1.5em;
                 font-weight: bold;
-                margin-top: 1rem;
-                margin-left: 1rem;
+    
               }
 
               h3 {
-
+                display: inline-block;
+                margin-right: 10px;
               }
 
-
-
-              @media (max-width: 600px) {
-                .grid {
-                  grid-template-columns: 1fr;
-                }
+              .date {
+                display: inline;
               }
+    
             `}</style>
         </div>
     );

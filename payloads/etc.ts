@@ -11,7 +11,7 @@ export const etc: IETC[] = [
         subTitle: '자격증',
     },
     {
-        title: '소프트웨어학부 소프트웨어공모전 금상',
+        title: '소프트웨어공모전 금상',
         startAt: '2021.09.16',
         subTitle: '수상',
     }

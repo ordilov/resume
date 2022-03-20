@@ -25,24 +25,22 @@ export default function Etc({etc}: { etc: IETC[] }) {
                 grid-row: 1 / ${etc.length + 1};
               }
 
-              .etc-item {
-                margin-left: 1em;
+              h3 {
+                display: inline-block;
+                margin-right: 10px;
               }
 
-              .grid {
-                display: grid;
-                background-color: #f0f0f0;
-                padding: 10px;
-                grid-column-gap: 1rem;
-                grid-template-columns: 220px 1fr;
+              .date {
+                display: inline-block;
               }
+
+
+
 
               @media (max-width: 600px) {
                 .grid {
                   grid-template-columns: 1fr;
                 }
-
-
               }
             `}</style>
         </div>

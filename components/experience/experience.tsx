@@ -6,7 +6,7 @@ export default function Experience({experiences}: { experiences: IExperience[] }
         <div className={"grid"}>
             <h2>Experience</h2>
             {experiences.map((experience, index) => (
-                <div key={index}>
+                <div className={"exp"} key={index}>
                     <h3>{experience.company}</h3>
                     <div className={"date"}>
                         {experience.startAt} ~ {experience.endAt}
@@ -16,34 +16,32 @@ export default function Experience({experiences}: { experiences: IExperience[] }
             ))}
 
             <style jsx>{`
-              .grid {
-                display: grid;
-                background-color: #f0f0f0;
-                padding: 10px;
-                grid-template-columns: 250px 1fr;
-                row-gap: 0;
-              }
 
               h2 {
                 grid-row: 1 / ${experiences.length + 1};
                 font-size: 1.5em;
                 font-weight: bold;
+ 
+              }
+
+              h3 {
                 margin-top: 1rem;
-                margin-left: 1rem;
+                margin-right: 10px;
+                display: inline;
               }
 
-              h3, p {
+              p {
                 margin-top: 1rem;
               }
-
-              .item {
+              
+              .exp {
+              margin-top: 1.5em;
               }
 
-              @media (max-width: 600px) {
-                .grid {
-                  grid-template-columns: 1fr;
-                }
+              .date {
+                display: inline-block;
               }
+        
             `}</style>
         </div>
     );

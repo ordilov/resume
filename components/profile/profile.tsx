@@ -2,8 +2,8 @@ import Face from "./face";
 import React from "react";
 import {IProfile} from "../../payloads/profile";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faBlog, faEnvelope, faFeather, faFeatherPointed} from "@fortawesome/free-solid-svg-icons";
-import {faBlogger, faGithub} from "@fortawesome/free-brands-svg-icons";
+import {faEnvelope, faFeatherPointed} from "@fortawesome/free-solid-svg-icons";
+import {faGithub} from "@fortawesome/free-brands-svg-icons";
 
 export default function Profile({profile}: { profile: IProfile }) {
     const {name, email, blog, github} = profile;
@@ -12,13 +12,13 @@ export default function Profile({profile}: { profile: IProfile }) {
             <Face/>
             <h2>{name}</h2>
             <a href={email} className={"item"}>
-                <FontAwesomeIcon icon={faEnvelope}/> {email}
+                <FontAwesomeIcon icon={faEnvelope}/> <span> {email} </span>
             </a>
             <a href={blog} className={"item"}>
-                <FontAwesomeIcon icon={faFeatherPointed}/> {blog}
+                <FontAwesomeIcon icon={faFeatherPointed}/> <span> {blog} </span>
             </a>
             <a href={github} className={"item"}>
-                <FontAwesomeIcon icon={faGithub}/> {github}
+                <FontAwesomeIcon icon={faGithub}/> <span> {github} </span>
             </a>
             <hr/>
             <style jsx>{`
@@ -30,6 +30,15 @@ export default function Profile({profile}: { profile: IProfile }) {
 
               h2 {
                 font-size: 24pt;
+                margin-top: 1em;
+              }
+
+              span {
+                margin-left: 1em;
+              }
+
+              .item {
+                margin-top: 1em;
               }
 
               .grid {
@@ -52,6 +61,11 @@ export default function Profile({profile}: { profile: IProfile }) {
 
                 a {
                   margin-left: 7em;
+                  margin-bottom: 1em;
+                }
+
+                .item {
+                  margin-top: 0;
                 }
               }
             `}</style>

@@ -31,3 +31,20 @@ svg {
   font-size: 0.8em;
   color: #999;
 }
+
+.grid {
+  display: grid;
+  background-color: #f0f0f0;
+  padding: 10px;
+  grid-template-columns: 250px 1fr;
+  row-gap: 0;
+}
+
+@media (max-width: 600px) {
+  h2 {
+    margin-left: 5px;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

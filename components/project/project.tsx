@@ -10,7 +10,7 @@ export default function Project({projects}: { projects: IProject[] }) {
                     <div className={"grid-item"}>
                         <h3>{project.title}</h3>
                         {project.description.map(
-                            (description) => <div>{description}</div>
+                            (description) => <li>{description}</li>
                         )}
                     </div>)
             })}
@@ -24,15 +24,7 @@ export default function Project({projects}: { projects: IProject[] }) {
               h2 {
                 grid-row: 1 / ${projects.length + 1};
               }
-
-              .grid {
-                display: grid;
-                background-color: #f0f0f0;
-                padding: 10px;
-                grid-column-gap: 1rem;
-                grid-template-columns: 240px 1fr;
-              }
-
+              
               @media (max-width: 600px) {
                 .grid {
                   grid-template-columns: 1fr;

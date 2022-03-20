@@ -31,7 +31,7 @@ export const projects: IProject[] = [
         description: [
             '사내 슬랙앱 리팩토링',
             'Bitbucket, Jira, Figma OAuth2 연동',
-            'ExpressJs -> NextJS 마이그레이션',
+            'ExpressJs ➙ NextJS 마이그레이션',
         ],
         skills: [
             'NodeJS',

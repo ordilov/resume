@@ -42,7 +42,7 @@ export default function Skill({skills}: { skills: ISkill[] }) {
                 display: inline-block;
                 padding: 5px;
                 border: 1px solid #ccc;
-                font-size: 1em;
+                font-size: 8pt;
                 border-radius: 5px;
               }
 
