@@ -5,12 +5,12 @@ export default function Introduction({content}: { content: string[] }) {
         <div className={"grid"}>
             <h2>Introduction</h2>
             {content.map((item, index) => (
-                <p key={index}>{item}</p>
+                <p key={`intro${index}`}>{item}</p>
             ))}
 
             <style jsx>{`
               p {
-                margin-top: 1.8em;
+                margin-top: 1.2em;
                 margin-bottom: 0;
               }
 

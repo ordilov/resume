@@ -11,16 +11,18 @@ export default function Profile({profile}: { profile: IProfile }) {
         <div className={"grid"}>
             <Face/>
             <h2>{name}</h2>
-            <a href={email} className={"item"}>
-                <FontAwesomeIcon icon={faEnvelope}/> <span> {email} </span>
+            <a href={email}>
+                <FontAwesomeIcon icon={faEnvelope}/>
+                <span> {email} </span>
             </a>
-            <a href={blog} className={"item"}>
-                <FontAwesomeIcon icon={faFeatherPointed}/> <span> {blog} </span>
+            <a href={blog}>
+                <FontAwesomeIcon icon={faFeatherPointed}/>
+                <span> {blog} </span>
             </a>
-            <a href={github} className={"item"}>
-                <FontAwesomeIcon icon={faGithub}/> <span> {github} </span>
+            <a href={github}>
+                <FontAwesomeIcon icon={faGithub}/>
+                <span> {github} </span>
             </a>
-            <hr/>
             <style jsx>{`
               a {
                 color: #53a44c;
@@ -34,17 +36,13 @@ export default function Profile({profile}: { profile: IProfile }) {
               }
 
               span {
-                margin-left: 1em;
-              }
-
-              .item {
-                margin-top: 1em;
+                margin-left: 0.5em;
               }
 
               .grid {
                 display: grid;
-                background-color: #f0f0f0;
                 padding: 10px;
+                background-color: #f0f0f0;
                 grid-column-gap: 1rem;
                 grid-template-columns: 220px 1fr;
                 grid-template-rows: 1fr 30px 30px 30px;
@@ -62,9 +60,6 @@ export default function Profile({profile}: { profile: IProfile }) {
                 a {
                   margin-left: 7em;
                   margin-bottom: 1em;
-                }
-
-                .item {
                   margin-top: 0;
                 }
               }

@@ -6,9 +6,9 @@ export default function Etc({etc}: { etc: IETC[] }) {
         <div className={"grid"}>
             <h2>Etc</h2>
             {
-                etc.map((e) => {
+                etc.map((e, index) => {
                     return (
-                        <div className={'etc-item'}>
+                        <div className={'etc-item'} key={`etc${index}`}>
                             <h3>{e.title}</h3>
                             <div className={"date"}>{e.startAt}</div>
                         </div>

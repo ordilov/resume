@@ -36,24 +36,22 @@ const Home: NextPage = () => {
             <Education educations={educations}/>
             <Etc etc={etc}/>
             <Footer/>
-            <style jsx>{
-                `
-                  .container {
-                    width: 100%;
-                    padding-left: 15px;
-                    padding-right: 15px;
-                    margin-right: auto;
-                    margin-left: auto;
-                  }
-                  
-                  @media(min-width: 768px) {
-                    .container {
-                      width: 750px;
-                    }
-                  }
-                  
-                `
-            }</style>
+            <style jsx>{`
+              .container {
+                width: 100%;
+                padding-left: 15px;
+                padding-right: 15px;
+                margin-right: auto;
+                margin-left: auto;
+              }
+
+              @media (min-width: 768px) {
+                .container {
+                  width: 750px;
+                }
+              }
+
+            `}</style>
         </div>
     )
 }

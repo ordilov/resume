@@ -6,10 +6,10 @@ export default function Skill({skills}: { skills: ISkill[] }) {
         <div className={"grid"}>
             <h2>Skill</h2>
             {skills.map((skill, index) => (
-                <div key={index} className={"skill"}>
+                <div key={`skill${index}`} className={"skill"}>
                     <h3>{skill.category}</h3>
-                    {skill.items.map((item) => (
-                        <div className={"skill-item"}>{item.name}</div>
+                    {skill.items.map((item, idx) => (
+                        <div key={`skill${index}$item${idx}`} className={"skill-item"}>{item.name}</div>
                     ))}
                 </div>
             ))}

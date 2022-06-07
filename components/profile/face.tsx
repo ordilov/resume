@@ -1,9 +1,11 @@
 export default function Face() {
     const basePath = process.env.NODE_ENV === 'production' ? '/resume' : '';
+    const profileImage = `${basePath}/img/temp.png`
+
     return (
         <>
             <div>
-                <img src={`${basePath}/img/temp.png`} alt="face"/>
+                <img src={profileImage} alt="face"/>
                 <style jsx>{`
                   div {
                     width: 200px;

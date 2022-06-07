@@ -13,7 +13,7 @@ export default function Article({articles}: { articles: IArticle[] }) {
 
             <style jsx>{`
               a {
-                color: #555;
+                color: #699de3;
                 font-size: 1em;
               }
 
@@ -22,7 +22,7 @@ export default function Article({articles}: { articles: IArticle[] }) {
               }
 
               .grid-item {
-                margin-top: 2em;
+                margin-top: 1.2em;
               }
 
               @media (max-width: 600px) {

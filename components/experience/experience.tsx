@@ -21,7 +21,6 @@ export default function Experience({experiences}: { experiences: IExperience[] }
                 grid-row: 1 / ${experiences.length + 1};
                 font-size: 1.5em;
                 font-weight: bold;
- 
               }
 
               h3 {
@@ -31,7 +30,7 @@ export default function Experience({experiences}: { experiences: IExperience[] }
               }
 
               p {
-                margin-top: 1rem;
+                margin-top: 0.75rem;
               }
               
               .exp {
